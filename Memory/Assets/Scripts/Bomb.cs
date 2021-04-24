@@ -19,6 +19,7 @@ public class Bomb : MonoBehaviour
     private void OnMouseDown()
     {
         GameObject.Find("GameManager").GetComponent<GameManager>().ScoreUp();
+        SoundManagerScript.PlaySound("explode");
         Destroy(gameObject);
     }
 

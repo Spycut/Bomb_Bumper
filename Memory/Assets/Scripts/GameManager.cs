@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     public void ScoreUp()
     {
         score++;
-        if(score >=4)
+        if(score >=10)
         {
             Win(); 
         }
